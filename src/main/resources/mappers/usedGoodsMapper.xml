@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.sinsokey.spring.ex.database.repository.UsedGoodsRepository">
+  
+  	<select id="selectUsedGoodsList" resultType="com.sinsokey.spring.ex.database.domain.UsedGoods">
+  		select 
+  			id
+  			, sellerId
+  			, title
+  			, price
+  			, description
+  			, picture
+  			, createdAt
+  			, updatedAt
+  		from
+  			used_goods;
+  	</select>
+  	
+  	
+  
+  </mapper>
+  
