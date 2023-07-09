@@ -9,5 +9,5 @@ import com.sinsokey.spring.ex.mybatis.domain.Review;
 public interface ReviewRepository {
 	
 	//id가 3인 review 데이터 조회
-	public Review selectReview(@Param("id")int id);
+	public Review selectReview(@Param("id") int id);
 }
