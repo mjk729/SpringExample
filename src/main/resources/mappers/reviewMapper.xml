@@ -21,4 +21,49 @@
   		where
   			id= #{id};
   	</select>
+  	
+ 
+  	<insert id="insertReview" parameterType="map">
+ 		insert into
+ 			new_review
+ 		(
+			storeId
+  			,menu
+  			,userName
+  			,point
+  			,review 
+ 		)
+ 		value
+ 		(
+ 			#{storeId}
+ 			, #{menu}
+ 			, #{userName}
+ 			, #{point}
+ 			, #{review}
+ 		)
+ 		
+  	</insert>
+  	
+  	<insert id="insertReviewByObject" parameterType="com.sinsokey.spring.ex.mybatis.domain.Review">
+  		insert into
+ 			new_review
+ 		(
+			storeId
+  			,menu
+  			,userName
+  			,point
+  			,review 
+ 		)
+ 		value
+ 		(
+ 			#{storeId}
+ 			, #{menu}
+ 			, #{userName}
+ 			, #{point}
+ 			, #{review}
+ 		)
+ 		
+ 		
+  	</insert>
+  	
   </mapper>
