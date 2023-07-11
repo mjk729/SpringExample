@@ -3,6 +3,8 @@ package com.sinsokey.spring.ex.jsp.repository;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import com.sinsokey.spring.ex.jsp.domain.User;
+
 @Repository
 public interface UserRepository {
 
@@ -11,5 +13,8 @@ public interface UserRepository {
 			, @Param("birthday") String birthday
 			, @Param("email") String email
 			, @Param("introduce") String introduce);
+	
+	// 가장 최근 사용자 조회
+	public User selectLastUser();
 	
 }

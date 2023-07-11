@@ -26,4 +26,22 @@
  		
  	</insert>
  	
+ 	<select id="selectLastUser" resultType="com.sinsokey.spring.ex.jsp.domain.User">
+ 		select
+ 			id
+ 			, name
+ 			, yyyymmdd
+ 			, email
+ 			, introduce
+ 			, createdAt
+ 			, updatedAt
+ 		from
+ 			new_user
+ 		order by
+ 			id desc
+ 		limit
+ 			1
+ 	</select>
+ 	
+ 	
  </mapper>
