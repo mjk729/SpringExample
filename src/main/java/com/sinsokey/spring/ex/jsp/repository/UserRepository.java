@@ -17,4 +17,7 @@ public interface UserRepository {
 	// 가장 최근 사용자 조회
 	public User selectLastUser();
 	
+	public int insertUserByObject(User user);
+	
+	
 }
