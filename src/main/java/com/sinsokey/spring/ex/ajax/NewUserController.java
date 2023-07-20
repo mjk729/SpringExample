@@ -28,7 +28,7 @@ public class NewUserController {
 		List<User> userList = newUserService.getUserList();
 		model.addAttribute("userList", userList);
 		
-		return "ajax/use/list";
+		return "ajax/user/list";
 	}
 	
 	@GetMapping("/add")
